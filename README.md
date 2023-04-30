@@ -1,5 +1,5 @@
 # Telebot
-My first GoLang based Telegram bot
+My first GoLang based [Telegram bot](http://t.me/turb0bur_bot)
 
 Example of build with setting custom version
 ```bash
