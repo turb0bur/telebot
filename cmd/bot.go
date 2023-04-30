@@ -1,6 +1,3 @@
-/*
-Copyright © 2023 NAME HERE <EMAIL ADDRESS>
-*/
 package cmd
 
 import (
@@ -13,7 +10,7 @@ import (
 	telebot "gopkg.in/telebot.v3"
 )
 
-var TelegramToken = os.Getenv("TELEGRAM_TOKEN")
+var TelegramToken = os.Getenv("TELE_TOKEN")
 
 // botCmd represents the bot command
 var botCmd = &cobra.Command{
@@ -38,7 +35,7 @@ to quickly create a Cobra application.`,
 		})
 
 		if err != nil {
-			log.Fatalf("Please check TELEGRAM_TOKEN")
+			log.Fatalf("Please check TELE_TOKEN")
 		}
 
 		bot.Handle(telebot.OnText, func(m telebot.Context) error {
