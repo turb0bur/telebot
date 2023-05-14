@@ -8,7 +8,9 @@
 !go.sum
 !go.mod
 
-!README.md
+!Dockerfile
+!Makefile
+!README.md`
 !LICENSE
 !.env.example
 
