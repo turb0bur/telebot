@@ -1,7 +1,9 @@
-FROM golang:1.19 as builder
+FROM quay.io/projectquay/golang:1.20 as builder
 WORKDIR /go/src/app
 COPY . .
-RUN make build
+ARG TARGETOS=linux
+ARG TARGETARCH=amd64
+RUN make build TARGETOS=$TARGETOS TARGETARCH=$TARGETARCH
 
 FROM scratch
 WORKDIR /
