@@ -1,18 +1,3 @@
-# Ignore everything
-*
-
-# But not these files...
-!/.gitignore
-
-!*.go
-!go.sum
-!go.mod
-
-!Dockerfile
-!Makefile
-!README.md`
-!LICENSE
-!.env.example
-
-# ...even if they are in subdirectories
-!*/
+.idea
+.env
+*.tgz
