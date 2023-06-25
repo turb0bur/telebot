@@ -3,12 +3,13 @@
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
-
 image:
   repository: turb0bur
-  tag: "v1.0.2-0f9d1b8"
-
+  tag: "v1.0.3-d8bfae5"
+  arch: amd64
 secret:
   name: telebot
-  tokenKey: token
-  tokenName: TELE_TOKEN
+  env: "TELE_TOKEN"
+  key: "token"
+securityContext:
+  privileged: true
